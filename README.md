@@ -38,7 +38,7 @@ Kaggle Dataset → Python + PostgreSQL (Docker) → dbt Transformations → Pref
 
 ## ⚙️ Components
 ### 1. Data Ingestion
-ingest_data.py loads the raw CSV dataset (tracks_features.csv) into a PostgreSQL database (running in Docker).
+`ingest_data.py` loads the raw CSV dataset (`tracks_features.csv`) into a PostgreSQL database (running in Docker).
 Uses chunked ingestion (100k rows) for scalability.
 
 ### 2. Data Transformation
@@ -52,15 +52,20 @@ dbt models structure the data into modular layers:
 |                  | `fct_track_features`                         |                                       |
 
 **dbt test**
+
 dbt test run successfully.
 ![dbt test](images/dbt-test.png)
 
 **Data Lineage**
+
 The following diagram shows how raw Spotify data flows through dbt models —from staging to marts layers.
+
 ![dbt lineage 1](images/dbt-dag-1.png)
+
 ![dbt lineage 2](images/dbt-dag-2.png)
 
 **dbt docs**
+
 Explore the full dbt documentation and lineage graph [here](https://dbt-docs.netlify.app/)
 
 ### 3. Orchestration and Monitoring
@@ -82,14 +87,10 @@ Prefect orchestration successfully running the Spotify → dbt pipeline with two
 
 ### 5. Dashboard
 Built with Tableau to visualize:
-    - Correlation between track popularity and feature metrics
-    - Top 10 features influencing popularity
-    - Popularity distribution by genre, year, and artist
 
-
-## 🧠 Future Enhancements
-- Deploy PostgreSQL & dbt to the cloud (GCP BigQuery) using Terraform
-- Add CI/CD using GitHub Actions
+- Correlation between track popularity and feature metrics
+- Top 10 features influencing popularity
+- Popularity distribution by genre, year, and artist
 
 ## 🚀 Reproducibility
 🧩 Prerequisites
@@ -99,35 +100,36 @@ Built with Tableau to visualize:
 - Prefect 3 CLI
 - Tableau Desktop / Tableau Public
 
-🪄 Steps to Run Locally
-1️⃣ Clone the Repository
+🪄 **Steps to Run Locally**
+
+1️⃣ **Clone the Repository**
 ```
 git clone https://github.com/deedeepratiwi/spotify-analysis.git
 cd spotify-analysis
 ```
 
-2️⃣ Start PostgreSQL & dbt Environment
+2️⃣ **Start PostgreSQL & dbt Environment**
 ```
 docker-compose up -d
 ```
 
-3️⃣ Ingest Raw Data into PostgreSQL
+3️⃣ **Ingest Raw Data into PostgreSQL**
 ```
 python src/ingest_data.py
 ```
 
-4️⃣ Run dbt Transformations
+4️⃣ **Run dbt Transformations**
 ```
 dbt deps
 dbt build
 ```
 
-5️⃣ Orchestrate with Prefect
+5️⃣ **Orchestrate with Prefect**
 ```
 prefect deployment run "spotify_pipeline/main"
 ```
 
-6️⃣ Connect Tableau to PostgreSQL
+6️⃣ **Connect Tableau to PostgreSQL**
 - Open Tableau → Connect → PostgreSQL
 - Host: localhost
 - Port: 5432
@@ -174,10 +176,17 @@ The dashboard highlights:
 
 ![Spotify](images/spotify.png)
 
+## 🧠 Future Enhancements
+- Deploy PostgreSQL & dbt to the cloud (GCP BigQuery) using Terraform
+- Add CI/CD using GitHub Actions
+
 # 👩‍💻 Author
 Diana Pratiwi
+
 Data Analyst → aspiring Analytics Engineer
+
 [GitHub](https://github.com/deedeepratiwi/portfolio/tree/main)
+
 [LinkedIn](https://www.linkedin.com/in/dianapratiwi/)
 
 
