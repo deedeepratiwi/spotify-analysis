@@ -1,0 +1,100 @@
+Installing dbt project and profile setup
+Info Created .vscode/extensions.json with dbt extension recommendation
+Success Project created successfully!
+Info Project name: jaffle_shop
+Info Project directory: jaffle_shop
+Info Setting up your profile...
+Info Creating new profile...
+No dbt_cloud.yml found - proceeding without cloud pre-population
+Success Profile written to ./.dbt\profiles.yml
+Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.47
+   Loading ~/.dbt/profiles.yml
+error: dbt1001: Profile '[33mjaffle_shop[0m' not found in profiles.yml
+
+==================== Execution Summary =====================
+Finished 'init' with 1 error [34.9s]
+Installing dbt project and profile setup
+Warning Directory 'jaffle_shop' already exists, using 'jaffle_shop_1' instead
+Info Created .vscode/extensions.json with dbt extension recommendation
+Success Project created successfully!
+Info Project name: jaffle_shop_1
+Info Project directory: jaffle_shop_1
+Info Setting up your profile...
+Info Creating new profile...
+No dbt_cloud.yml found - proceeding without cloud pre-population
+Success Profile written to ./.dbt\profiles.yml
+Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.47
+   Loading ~/.dbt/profiles.yml
+error: dbt1001: Profile '[33mjaffle_shop_1[0m' not found in profiles.yml
+
+==================== Execution Summary =====================
+Finished 'init' with 1 error [2m 7s]
+Installing dbt project and profile setup
+Info Created .vscode/extensions.json with dbt extension recommendation
+Success Project created successfully!
+Info Project name: jaffle_shop
+Info Project directory: jaffle_shop
+Info Setting up your profile...
+Info Creating new profile...
+No dbt_cloud.yml found - proceeding without cloud pre-population
+Success Profile written to ./.dbt\profiles.yml
+Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.47
+   Loading ~/.dbt/profiles.yml
+error: dbt1001: Profile '[33mjaffle_shop[0m' not found in profiles.yml
+
+==================== Execution Summary =====================
+Finished 'init' with 1 error [25.9s]
+Installing dbt project and profile setup
+Warning Directory 'jaffle_shop' already exists, using 'jaffle_shop_1' instead
+Info Created .vscode/extensions.json with dbt extension recommendation
+Success Project created successfully!
+Info Project name: jaffle_shop_1
+Info Project directory: jaffle_shop_1
+Info Setting up your profile...
+Info Creating new profile...
+No dbt_cloud.yml found - proceeding without cloud pre-population
+Success Profile written to ./.dbt\profiles.yml
+Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.47
+   Loading ~/.dbt/profiles.yml
+error: dbt1001: Profile '[33mjaffle_shop_1[0m' not found in profiles.yml
+
+==================== Execution Summary =====================
+Finished 'init' with 1 error [17.3s]
+[0m12:59:42.720840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A137ECED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A13823D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A13823010>]}
+
+
+============================== 12:59:42.720840 | 9f9bdfae-43d1-49ea-8a76-1009ae981967 ==============================
+[0m12:59:42.720840 [info ] [MainThread]: Running with dbt=1.10.13
+[0m12:59:42.720840 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'write_json': 'True', 'log_format': 'default', 'no_print': 'None', 'use_colors': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\diana\\.dbt', 'invocation_command': 'dbt build', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m12:59:42.720840 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\diana\jupyter_notebooks\spotify-analysis\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:59:42.720840 [debug] [MainThread]: Command `dbt build` failed at 12:59:42.720840 after 0.08 seconds
+[0m12:59:42.735196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A137EC550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A0CB40AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A137E7BD0>]}
+[0m12:59:42.736204 [debug] [MainThread]: Flushing usage events
+[0m12:59:50.370121 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:00:05.815187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002362C57A810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002362C49B350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002362C578450>]}
+
+
+============================== 13:00:05.815187 | 67bd85a9-b70b-4f79-9860-3beaea7dcd85 ==============================
+[0m13:00:05.815187 [info ] [MainThread]: Running with dbt=1.10.13
+[0m13:00:05.815187 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'target_path': 'None', 'profiles_dir': 'C:\\Users\\diana\\.dbt', 'printer_width': '80', 'use_colors': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select debug/select_spotify.sql', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m13:00:05.829670 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\diana\jupyter_notebooks\spotify-analysis\dbt\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:00:05.831185 [debug] [MainThread]: Command `dbt run` failed at 13:00:05.831185 after 0.08 seconds
+[0m13:00:05.831185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002362C5E3150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000236258E1050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002362C573A50>]}
+[0m13:00:05.831185 [debug] [MainThread]: Flushing usage events
+[0m13:00:15.504204 [debug] [MainThread]: An error was encountered while trying to flush usage events

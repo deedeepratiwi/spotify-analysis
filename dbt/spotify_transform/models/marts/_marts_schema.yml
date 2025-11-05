@@ -1,0 +1,48 @@
+models:
+  - name: dim_tracks
+    description: "Dimension table for track metadata and descriptive attributes."
+    columns:
+      - name: dim_track_pk
+        description: "Unique track identifier."
+        tests:
+          - not_null
+          - unique
+          
+  - name: dim_albums
+    description: "Dimension table containing album-level information."
+    columns:
+      - name: dim_album_pk
+        description: "Unique album identifier."
+        tests:
+          - not_null
+          - unique
+  
+  - name: dim_artists
+    description: "Dimension table containing artist-level information."
+    columns:
+      - name: dim_artist_pk
+        description: "Unique artist identifier."
+        tests:
+        - not_null
+        - unique
+
+  - name: fct_track_features
+    description: "Fact table combining track audio features, popularity, and album references."
+    columns:
+      - name: dim_track_pk
+        description: "Foreign key to dim_tracks."
+        tests:
+          - not_null
+          - unique
+          - relationships:
+              arguments:
+                to: ref('dim_tracks')
+                field: dim_track_pk
+
+      - name: dim_album_pk
+        description: "Foreign key to dim_albums."
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_albums')
+                field: dim_album_pk

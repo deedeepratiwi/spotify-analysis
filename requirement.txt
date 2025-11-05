@@ -1,0 +1,16 @@
+pandas
+numpy
+sqlalchemy
+psycopg2-binary
+
+dbt-core
+dbt-postgres
+
+prefect==3.*
+
+python-dotenv
+
+tqdm
+pyarrow
+
+jupyter
