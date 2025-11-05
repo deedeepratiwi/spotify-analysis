@@ -9,8 +9,7 @@ Using a dataset of over 1.2 million songs from Kaggle, the project demonstrates 
 Understanding how musical characteristics evolve over time helps artists, producers, and industry strategists identify changes in listening trends and creative styles. Rather than focusing on popularity, this project explores how the core audio features of modern music — including danceability, energy, emotional valence, loudness, and tempo — have shifted across decades. These trends highlight broader cultural and production shifts in music, from analog to digital eras and from physical albums to streaming-first listening behaviors.
 
 ## 📚 Dataset
-[Kaggle: Spotify 12M Songs](https://www.kaggle.com/datasets/rodolfofigueroa/spotify-12m-songs)
-Contains over 12 million tracks with 16+ feature columns including danceability, tempo, energy, and popularity.
+Kaggle [Spotify 12M Songs](https://www.kaggle.com/datasets/rodolfofigueroa/spotify-12m-songs) contains over 12 million tracks with 16+ feature columns including danceability, tempo, energy, and valence.
 
 Download dataset using this code:
 ```
