@@ -34,7 +34,7 @@ kaggle datasets download -d rodolfofigueroa/spotify-12m-songs -p data/raw --unzi
 ## 🧱 Architecture
 Kaggle Dataset → Python + PostgreSQL (Docker) → dbt Transformations → Prefect Orchestration → Tableau Dashboard
 
-![Spotify Data Pipeline](images/spotify_data_pipeline.png)
+![Spotify Data Pipeline](images/spotify_data_pipeline.jpg)
 
 ## ⚙️ Components
 ### 1. Data Ingestion
